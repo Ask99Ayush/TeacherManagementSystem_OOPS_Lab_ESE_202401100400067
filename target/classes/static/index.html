@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Teacher Management System | ESE Lab</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="top-bar">
+    <h1>Teacher Management System</h1>
+    <p>Spring Boot RESTful CRUD Application</p>
+</header>
+
+<div class="dashboard">
+
+    <!-- CREATE -->
+    <div class="card">
+        <h2>Add Teacher</h2>
+
+        <input type="text" id="name" placeholder="Teacher Name">
+        <input type="text" id="subject" placeholder="Subject">
+
+        <button class="btn netflix full" onclick="addTeacher()">Add Teacher</button>
+    </div>
+
+    <!-- READ -->
+    <div class="card">
+        <h2>Teacher List</h2>
+
+        <table>
+            <thead>
+            <tr>
+                <th>ID</th>
+                <th>Teacher Name</th>
+                <th>Subject</th>
+                <th>Action</th>
+            </tr>
+            </thead>
+            <tbody id="teacherTable">
+            <!-- Data loaded from API -->
+            </tbody>
+        </table>
+    </div>
+
+</div>
+
+<footer>
+    <p>REST API • Spring Boot • CRUD Operations</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
